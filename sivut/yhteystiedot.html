@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteystiedot - Keyboard Bot</title>
+</head>
+<body>
+
+    <header>
+        <h1>Ota yhteyttä</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Etusivu</a></li>
+            <li><a href="paatieto.html">Päätieto tästä botista</a></li>
+            <li><a href="toiminnallisuus.html">Toiminnallisuus</a></li>
+            <li><a href="tieto-meista.html">Tietoa meistä</a></li>
+            <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Yhteydenottolomake</h2>
+            <p>Onko sinulla kysyttävää, palautetta tai kehitysehdotuksia botista? Lähetä minulle viestiä alla olevan lomakkeen kautta!</p>
+            
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Henkilötiedot ja viesti</legend>
+                    <label for="nimi">Nimi:</label><br>
+                    <input type="text" id="nimi" name="nimi" required placeholder="Kirjoita nimesi"><br><br>
+
+                    <label for="sposti">Sähköpostiosoite:</label><br>
+                    <input type="email" id="sposti" name="sposti" required placeholder="esimerkki@posti.fi"><br><br>
+
+                    <label for="aihe">Viestin aihe:</label><br>
+                    <select id="aihe" name="aihe" required>
+                        <option value="" disabled selected>Valitse aihe...</option>
+                        <option value="palaute">Palaute botista</option>
+                        <option value="kysymys">Kysymys</option>
+                        <option value="kehitysehdotus">Kehitysehdotus</option>
+                    </select><br><br>
+
+                    <label for="viesti">Viesti:</label><br>
+                    <textarea id="viesti" name="viesti" rows="5" cols="40" required placeholder="Kirjoita viestisi tähän..."></textarea><br><br>
+
+                    <button type="submit">Lähetä viesti</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section>
+            <h2>Sijainti</h2>
+            <p>Projekti on kehitetty Suomessa. Tässä on sijaintimme kartalla:</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15654.54580226922!2d25.068212165039203!3d60.473550889246134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4691e2af35d54cd5%3A0x400b551554bb730!2zSsOkcnZlbnDDpMOk!5e0!3m2!1sfi!2sfi!4v1700000000000!5m2!1sfi!2sfi" 
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Keyboard Bot -projekti. <a href="mailto:sotnikk1234567890@gmail.com">Ota yhteyttä sähköpostitse</a>.</p>
+    </footer>
+
+</body>
+</html>
